@@ -1,0 +1,128 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-image: url("../img/inicial.jpg");
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover
+}
+
+.perguntas {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.pergaminho{
+    position: relative;
+    height: 750px;
+    left: 20px;
+    top: 100px;
+}
+
+.bau{
+    position: absolute;
+    height: 100px;
+    visibility: visible;
+    left: 200px;
+    top: 20px;
+    z-index: 200;
+}
+
+.trofeus{
+    position: absolute;
+    height: 130px;
+    visibility: visible;
+    left: 200px;
+    top: 20px;
+    z-index: 200;
+}
+.conteudo{
+    position: absolute;
+    font-size: 14px;
+    left: 80px;
+    top: 200px;
+    width: 380px;
+    height: 221px;  
+}
+
+.mapa-BoT {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.regiao-mapa {
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  position: relative;
+  display:block;
+  transform: scale(1);
+  transform-style: preserve-3d; 
+  transition: transform .5s;
+}
+
+.regiao-mapa:active {
+  transform: scale(1.3);
+  transition: transform .5s;
+}
+
+.regiao-mapa.flip {
+  transform: rotateY(180deg);
+}
+
+.estado-mapa {
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d; 
+  transition: transform .5s;
+}
+
+.estado-mapa:active {
+  transform: scale(1.3);
+  transition: transform .5s;
+}
+
+.estado-mapa.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  padding: 0;
+  position: absolute;
+  border-radius: 0;
+  background: transparent;
+  backface-visibility: hidden;
+  transform-origin: center right;
+}
+
+.front-face {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+#Sul { position: absolute; visibility: visible; left: 17.5px; top: 229px; z-index: 300; }
+
+#PR { position: absolute; visibility: visible; left: 125px; top: 225px; z-index: 200; }
+
+
+#SC { position: absolute; visibility: visible; left: 200px; top: 400px; z-index: 200; }
+
+#RS { position: absolute; visibility: visible; left: 25px; top: 455px; z-index: 200; }
