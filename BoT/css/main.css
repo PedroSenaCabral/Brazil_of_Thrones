@@ -35,9 +35,9 @@ body {
 .conteudo{
     position: absolute;
     font-size: 12px;
-    left: 12%;
+    left: 8%;
     top: 20%;
-    width: 380px;
+    width: 410px;
     height: 221px;  
 }
 
@@ -103,43 +103,58 @@ body {
 }
 
 /****************************** NORTE ***************************************/
-#Norte{ position: absolute; visibility: visible; left: 108px; top: 130px; z-index: 296; }
+#Norte{ position: absolute; visibility: visible; left: 108px; top: 130px; z-index: 300; }
 
+
+#AM { position: absolute; visibility: visible; left: 95px; top: 164px; z-index: 200; }
+
+#PA { position: absolute; visibility: visible; left: 273px; top: 160px; z-index: 201; }
+
+#RR { position: absolute; visibility: visible; left: 202px; top: 127px; z-index: 202; }
+
+#AC { position: absolute; visibility: visible; left: 92px; top: 277px; z-index: 202; }
+
+#RO { position: absolute; visibility: visible; left: 179px; top: 286px; z-index: 202; }
+
+#TO { position: absolute; visibility: visible; left: 372px; top: 250px; z-index: 202; }
 
 /****************************** NORDESTE *************************************/
-#Nordeste{ position: absolute; visibility: visible; left: 408px; top: 202px; z-index: 297; }
+#Nordeste{ position: absolute; visibility: visible; left: 408px; top: 202px; z-index: 301; }
 
 
 /****************************** CENTRO-OESTE *********************************/
-#CentroOeste{ position: absolute; visibility: visible; left: 254px; top: 280px; z-index: 298; }
+#CentroOeste{ position: absolute; visibility: visible; left: 254px; top: 280px; z-index: 302; }
 
-#MS { position: absolute; visibility: visible; left: 274px; top: 400px; z-index: 198; }
 
-#GO { position: absolute; visibility: visible; left: 342px; top: 343px; z-index: 198; }
+#MS { position: absolute; visibility: visible; left: 274px; top: 400px; z-index: 200; }
 
-#MT { position: absolute; visibility: visible; left: 240px; top: 279px; z-index: 198; }
+#GO { position: absolute; visibility: visible; left: 342px; top: 343px; z-index: 201; }
+
+#MT { position: absolute; visibility: visible; left: 240px; top: 279px; z-index: 202; }
 
 
 /****************************** SUDESTE **************************************/
-#Sudeste{ position: absolute; visibility: visible; left: 361px; top: 363px; z-index: 299; }
+#Sudeste{ position: absolute; visibility: visible; left: 361px; top: 363px; z-index: 303; }
 
-#SP { position: absolute; visibility: visible; left: 345px; top: 429px; z-index: 198; }
 
-#MG { position: absolute; visibility: visible; left: 367px; top: 362px; z-index: 198; }
+#SP { position: absolute; visibility: visible; left: 345px; top: 429px; z-index: 200; }
 
-#RJ { position: absolute; visibility: visible; left: 445px; top: 442px; z-index: 198; }
+#MG { position: absolute; visibility: visible; left: 367px; top: 362px; z-index: 201; }
 
-#ES { position: absolute; visibility: visible; left: 479px; top: 408px; z-index: 198; }
+#RJ { position: absolute; visibility: visible; left: 445px; top: 442px; z-index: 202; }
+
+#ES { position: absolute; visibility: visible; left: 479px; top: 408px; z-index: 203; }
 
 
 /****************************** SUL ******************************************/
-#Sul{ position: absolute; visibility: visible; left: 302px; top: 462px; z-index: 300; }
+#Sul{ position: absolute; visibility: visible; left: 302px; top: 462px; z-index: 304; }
 
-#PR { position: absolute; visibility: visible; left: 316px; top: 460px; z-index: 198; }
 
-#SC { position: absolute; visibility: visible; left: 335px; top: 504px; z-index: 199; }
+#PR { position: absolute; visibility: visible; left: 316px; top: 460px; z-index: 200; }
 
-#RS { position: absolute; visibility: visible; left: 289px; top: 518px; z-index: 200; }
+#SC { position: absolute; visibility: visible; left: 335px; top: 504px; z-index: 201; }
+
+#RS { position: absolute; visibility: visible; left: 289px; top: 518px; z-index: 202; }
 
 /*
 .regiao-mapa {
