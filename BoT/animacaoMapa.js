@@ -6,26 +6,79 @@ var perguntasSul_01= ["<h2>A Guerra de Farrapos</h2><br /><p><strong> Conflito r
 
 var random_01=Math.floor(Math.random()*perguntasSul_01.length);
 
-const estados = document.querySelectorAll('.estado-mapa');
-const regioes = document.querySelectorAll('.regiao-mapa');
+//const regioes = document.querySelectorAll('.regiao-mapa');
+var regSel=false;
+var estadoReg, regiao, i,j;
+var zIndReg, zIndEst;
 
-function flipObj() {
-  this.classList.toggle('flip');
+
+function getStyle(el,styleProp)
+{
+    var x = document.getElementById(el);
+
+    if (window.getComputedStyle) {
+        var y = document.defaultView.getComputedStyle(x,null).getPropertyValue(styleProp); 
+    } else if (x.currentStyle) {
+        var y = x.currentStyle[styleProp];
+    }                     
+
+    return Number(y);
 }
 
-function hideObj() {
-    if(this.style.display=== "none"){
-	this.style.display= "block";	
-    } else {
-	this.style.display= "none"; // block eh melho? testar
+
+function hideReg(id_reg) {
+    
+    if(!regSel){
+	document.getElementById(id_reg).style.display="none";
 	document.getElementById("pergunta_01").innerHTML=perguntasSul_01[random_01];
+	regSel=true;
+
+	estadoReg=document.getElementsByClassName(id_reg);
+	for(i=0;i<estadoReg.length;i++){
+	    zIndEst = getStyle(estadoReg[i].id,"z-index");
+	    if(zIndEst!==150){ 
+		estadoReg[i].style.zIndex=zIndEst+200;
+	    }
+	    //console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
+	}
+    } 
+
+}
+
+function showReg(){
+    regiao=document.getElementsByClassName("regiao-mapa");
+    for(i=0;i<regiao.length;i++){
+	if(regiao[i].style.display==="none"){
+
+	    estadoReg=document.getElementsByClassName(regiao[i].id);
+	    for(j=0;j<estadoReg.length;j++){
+		zIndEst=getStyle(estadoReg[j].id,"z-index");
+		if(zIndEst!=150){ 
+		    estadoReg[j].style.zIndex=zIndEst-200;
+		}
+		//console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
+	    }
+	    regiao[i].style.display="block";
+	    break;
+	}
     }
 
 }
 
-estados.forEach(estado => estado.addEventListener('click', flipObj));
-regioes.forEach(regiao => regiao.addEventListener('click', hideObj));
+function checaResp(id_state){
+    switchState(id_state);
+    regSel=false;
+    showReg();
+}
 
+function switchState(id_state) {
+    document.getElementById(id_state).classList.add('switch');
+    document.getElementById(id_state).style.zIndex=150;    
+}
+
+
+
+//regioes.forEach(regiao => regiao.addEventListener('click', hideReg));
 
 
 
