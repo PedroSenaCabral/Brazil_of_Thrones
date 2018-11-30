@@ -98,9 +98,12 @@ body {
   display:none;
 }
 
-.Sul {
 
-}
+/* Classe utilizadas para selecionar múltiplos estados de uma região*/ 
+.CentroOeste {}
+.Sudeste {}
+.Sul {}
+
 
 /****************************** NORTE ***************************************/
 #Norte{ position: absolute; visibility: visible; left: 108px; top: 130px; z-index: 300; }
@@ -126,20 +129,19 @@ body {
 #CentroOeste{ position: absolute; visibility: visible; left: 254px; top: 280px; z-index: 302; }
 
 
-#MS { position: absolute; visibility: visible; left: 274px; top: 400px; z-index: 200; }
+#MT { position: absolute; visibility: visible; left: 240px; top: 279px; z-index: 200; }
 
-#GO { position: absolute; visibility: visible; left: 342px; top: 343px; z-index: 201; }
+#MS { position: absolute; visibility: visible; left: 274px; top: 400px; z-index: 201; }
 
-#MT { position: absolute; visibility: visible; left: 240px; top: 279px; z-index: 202; }
-
+#GO { position: absolute; visibility: visible; left: 342px; top: 343px; z-index: 203; }
 
 /****************************** SUDESTE **************************************/
 #Sudeste{ position: absolute; visibility: visible; left: 361px; top: 363px; z-index: 303; }
 
 
-#SP { position: absolute; visibility: visible; left: 345px; top: 429px; z-index: 200; }
+#MG { position: absolute; visibility: visible; left: 367px; top: 362px; z-index: 200; }
 
-#MG { position: absolute; visibility: visible; left: 367px; top: 362px; z-index: 201; }
+#SP { position: absolute; visibility: visible; left: 345px; top: 429px; z-index: 201; }
 
 #RJ { position: absolute; visibility: visible; left: 445px; top: 442px; z-index: 202; }
 
