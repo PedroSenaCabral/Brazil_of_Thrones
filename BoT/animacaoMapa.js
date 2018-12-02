@@ -41,14 +41,14 @@ function hideReg(id_reg) {
 	    if(zIndEst!==150){ 
 		estadoReg[i].style.zIndex=zIndEst+200;
 	    }
-	    console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
+	    //console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
 	}
     } 
 
 }
 
 function showReg(){
-    console.log("show");
+    
     regiao=document.getElementsByClassName("regiao-mapa");
     for(i=0;i<regiao.length;i++){
 	if(regiao[i].style.display==="none"){
@@ -59,7 +59,7 @@ function showReg(){
 		if(zIndEst!=150){ 
 		    estadoReg[j].style.zIndex=zIndEst-200;
 		}
-		console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
+		//console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
 	    }
 	    regiao[i].style.display="block";
 	    break;
@@ -70,13 +70,19 @@ function showReg(){
 
 function checaResp(id_state){
     switchState(id_state);
-    regSel=false;
     showReg();
+    regSel=false;
+   
 }
 
 function switchState(id_state) {
     document.getElementById(id_state).classList.add('switch');
     document.getElementById(id_state).style.zIndex=150;    
+}
+
+function switchState(id_reg) {
+    document.getElementById(id_reg).classList.add('switch');
+    document.getElementById(id_reg).style.zIndex=150;    
 }
 
 
