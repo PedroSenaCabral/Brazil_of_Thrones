@@ -100,6 +100,7 @@ body {
 
 
 /* Classe utilizadas para selecionar múltiplos estados de uma região*/ 
+.Norte {}
 .CentroOeste {}
 .Sudeste {}
 .Sul {}
@@ -117,7 +118,7 @@ body {
 
 #AC { position: absolute; visibility: visible; left: 92px; top: 277px; z-index: 202; }
 
-#RO { position: absolute; visibility: visible; left: 179px; top: 286px; z-index: 202; }
+#RO { position: absolute; visibility: visible; left: 179px; top: 286px; z-index: 203; }
 
 #TO { position: absolute; visibility: visible; left: 372px; top: 250px; z-index: 202; }
 
