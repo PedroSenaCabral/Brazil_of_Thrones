@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -69,6 +70,11 @@ body {
   perspective: 1000px;
 }
 
+area{
+    cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
+    display:block;
+ }
+ 
 .regiao-mapa {
   width: 10%;
   margin: 0;
@@ -85,6 +91,14 @@ body {
   transition: transform .5s;
 }
 */
+
+.regiao-mapa.switch .BR-face {
+  display:block;
+}
+
+.regiao-mapa.switch .family-face {
+  display:none;
+}
 
 .estado-mapa {
   width: 15%;
