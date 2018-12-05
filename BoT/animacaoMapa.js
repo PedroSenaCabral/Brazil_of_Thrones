@@ -30,7 +30,7 @@ const perguntasCentroOeste= [{
     conflito: "<h2>Rusga</h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> É um estado de povos diversos, uma mistura de índios, negros, espanhóis e portugueses que se miscigenaram nos primeiros anos do período colonial. É o único do Brasil a ter, sozinho, três dos principais biomas do país: Amazônia, Cerrado e Pantanal. </p>",
     infoConflito: "<br /> <p> Revolta pouco conhecida ocorrida durante o Período Regencial brasileiro, reflexo da então crescente rivalidade entre portugueses e brasileiros. O foco dos eventos foi a atual capital do estado, onde parte da elite local, desejosa de poder, se levantou contra a elite de ascendência portuguesa. Na noite de 30 de maio de 1834, a revolta eclodiu e iniciou a matança e o saque de dezenas de portugueses e pessoas ligadas a eles. Os líderes do movimento foram detidos e condenados e extinguiu-se a \"GUARDA MUNICIPAL\", que havia se envolvido diretamente no movimento. </p> ",
-    dica: "<br /> <p> Dica: </p>",
+    dica: "<br /> <p> Estado é o maior criador de gado do país. </p>",
     correctAnswer: "MT"
 }
 ]
@@ -74,11 +74,47 @@ const perguntasSul= [{
 /*************************************** FIM DAS PERGUNTAS ***************************************/
 
 
-var random_01;
+
 var regSel=false,perguntaOK; //bool
 var estadoReg, regiao, i,j;
 var zIndReg, zIndEst;
 var tentativa;
+var pergunta=[];
+var random_01;
+
+
+function shuffle(array){
+    var i,j, randomNum;
+    var arrayOK;
+    var array_shuffle=[];
+    
+    i=0;
+    do{
+	randomNum=Math.floor(Math.random()*array.length);
+	arrayOK=true;
+	for(j=0;j<array_shuffle.length;j++){
+	    if(array_shuffle[j].correctAnswer===array[randomNum].correctAnswer)
+		arrayOK=false;
+	}
+
+	if(arrayOK){
+	    array_shuffle.push(Object.assign({},array[randomNum]));
+	    i++;
+	}
+    }while(i<array.length);
+    
+//    console.log(array_shuffle);
+    return array_shuffle;
+}
+
+
+// embaralha as questões
+shuffle(perguntasNorte);
+shuffle(perguntasNordeste);
+shuffle(perguntasCentroOeste);
+shuffle(perguntasSudeste);
+shuffle(perguntasSul);
+
 
 function getStyle(el,styleProp)
 {
@@ -96,7 +132,6 @@ function getStyle(el,styleProp)
 
 function hideReg(id_reg) {
 
-    var pergunta=[];
 
     if (id_reg==='Norte'){
 	for(i=0;i<perguntasNorte.length;i++){
@@ -141,7 +176,7 @@ function hideReg(id_reg) {
 	    if(zIndEst!==150){ 
 		perguntaOK=1;
 	    }
-	}while(!perguntaOK);
+	} while(!perguntaOK);
 
 	document.getElementById("tabPergunta").innerHTML=pergunta[random_01].conflito;
 	document.getElementById("infoConf").innerHTML=pergunta[random_01].infoConflito;
@@ -203,7 +238,7 @@ function checaResp(id_state){
     zIndEst = getStyle(id_state,"z-index");
     if(zIndEst!==150){
 	tentativa++;
-	if(perguntasSul[random_01].correctAnswer===id_state){
+	if(pergunta[random_01].correctAnswer===id_state){
 	    // se acertou
 	    alert("Correto!");
 	    switchState(id_state);
@@ -212,7 +247,7 @@ function checaResp(id_state){
 	} else if (tentativa===1){
 	    // se errou pela primeira vez
 
-	    document.getElementById("dica").innerHTML=perguntasSul[random_01].dica;
+	    document.getElementById("dica").innerHTML=pergunta[random_01].dica;
             $('.nav-pills a[href="#dica"]').toggleClass('disabled');
 	    $('.nav-pills a[href="#dica"]').attr('data-toggle','pill');
 	    $('.nav-pills a[href="#dica"]').tab('show');
