@@ -14,7 +14,7 @@ body {
   background-size:cover
 }
 
-.perguntas {
+.divEsquerda {
   width: 50%;
   height: 100%;
   margin: auto;
@@ -34,12 +34,31 @@ body {
 
 .conteudo{
     position: absolute;
-    font-size: 12px;
+    font-size: 13px;
     left: 8%;
     top: 20%;
     width: 410px;
-    height: 221px;  
+    height: 221px;
+    color: #4682B4;
+    font-family: "Georgia";
 }
+
+/* estilo das tabs*/
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    color: #fff;
+    background-color: #4682B4;
+}
+
+.nav-pills > li > a {
+    font-family: "Georgia";
+    color: #215670;
+}
+								  
+.nav-pills > li > a.disabled {
+    color: #708090;
+}
+
+/* fim estilo*/
 
 .mapa-BoT {
   width: 80%;
@@ -57,10 +76,10 @@ body {
   display:block;
   transform: scale(0.25);
   transform-style: preserve-3d; 
-  transition: transform .5s;
+  transition: transform .5s; /* outro efeito: fade? */
 }
 
-/*
+/* active by id?
 .regiao-mapa:active {
   transform: scale(1.3);
   transition: transform .5s;
