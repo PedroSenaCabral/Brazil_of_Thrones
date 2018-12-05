@@ -1,0 +1,40 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-image: url("../img/inicial.jpg");
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover
+}
+
+.text{
+	color: #fff;
+    height: 100vh;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.text2{
+	color: #fff;
+    height: 100vh;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.jogar{
+	color: #fff;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+}
