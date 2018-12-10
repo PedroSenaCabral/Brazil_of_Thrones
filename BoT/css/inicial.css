@@ -15,26 +15,48 @@ body {
   background-size:cover
 }
 
+
 .text{
-	color: #fff;
-    height: 100vh;
+    color: #000000;
+    font-size:60px;
+    background-color:#fff;
+    font-family: "Georgia";
+    font-family: 'Noto Serif TC', serif;
+    font-family: "IM Fell English SC", serif;
+    height: 35%;
+    width:35%;
     position: absolute;
     top: 30%;
-    left: 35%;
+    left: 32%;
 }
 
 .text2{
-	color: #fff;
-    height: 100vh;
+    color: #800000;
+    font-size:40px;
+    font-family: 'Merienda', cursive;
+    font-family: 'Niconne', cursive;
+    height: 7%;
     position: absolute;
-    top: 35%;
+    top: 42%;
     left: 40%;
 }
 
 .jogar{
-	color: #fff;
-    height: 100vh;
+    color: #fff;
+    height: 10%;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 47%;
+
 }
+
+.jogar > a{
+    cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
+    display:block;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #4682B4;
+}
+
+

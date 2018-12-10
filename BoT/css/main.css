@@ -134,6 +134,7 @@ area{
 
 /* Classe utilizadas para selecionar múltiplos estados de uma região*/ 
 .Norte {}
+.Nordeste {}
 .CentroOeste {}
 .Sudeste {}
 .Sul {}
