@@ -61,9 +61,24 @@ body {
 
 /* fim estilo*/
 
+.brasoes-familias{
+    position: absolute;
+    width: 50%;
+}
+
+.brasao-stark{
+    position: absolute;
+    display: block;
+    transform: scale(0.1);
+    visibility: visible; 
+    left: 10px; 
+    top: 10px; 
+    z-index: 400;
+}
+
 .mapa-BoT {
   width: 80%;
-  height: 110%;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
