@@ -158,21 +158,21 @@ area{
 /****************************** NORDESTE *************************************/
 #Nordeste{ position: absolute; visibility: visible; left: 409px; top: 202px; z-index: 301; }
 
+#MA { position: absolute; visibility: visible; left: 395px; top: 202px; z-index: 200; }
+
 #BA { position: absolute; visibility: visible; left: 421px; top: 296px; z-index: 201; }
 
 #PI { position: absolute; visibility: visible; left: 428px; top: 224px; z-index: 202; }
 
-#MA { position: absolute; visibility: visible; left: 395px; top: 202px; z-index: 200; }
+#CE { position: absolute; visibility: visible; left: 484px; top: 224px; z-index: 203; }
 
-#CE { position: absolute; visibility: visible; left: 484px; top: 224px; z-index: 202; }
+#RN { position: absolute; visibility: visible; left: 518px; top: 251px; z-index: 204; }
 
-#RN { position: absolute; visibility: visible; left: 518px; top: 251px; z-index: 205; }
+#PB { position: absolute; visibility: visible; left: 515px; top: 263px; z-index: 205; }
 
-#PB { position: absolute; visibility: visible; left: 515px; top: 263px; z-index: 204; }
+#PE { position: absolute; visibility: visible; left: 487px; top: 280px; z-index: 204; }
 
-#PE { position: absolute; visibility: visible; left: 487px; top: 280px; z-index: 203; }
-
-#AL { position: absolute; visibility: visible; left: 522px; top: 297px; z-index: 204; }
+#AL { position: absolute; visibility: visible; left: 522px; top: 297px; z-index: 205; }
 
 #SE { position: absolute; visibility: visible; left: 519px; top: 305px; z-index: 202; }
 
@@ -210,10 +210,10 @@ area{
 
 #RS { position: absolute; visibility: visible; left: 289px; top: 518px; z-index: 202; }
 
-/*
+
 .regiao-mapa {
   display: none;
-}*/
+}
 
 /*.estado-mapa {
   display: none;
