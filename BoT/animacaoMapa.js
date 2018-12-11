@@ -3,8 +3,8 @@
 
 /*************************************** PERGUNTAS ***************************************/
 const perguntasNorte= [{
-    conflito: "<h2>Revolução Acreana</h2> <br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
-    infoEstado: "<br /> <p> Conhecidos como comedores de camarão, o estado tem sua economia respaldada na produção de frutas,  é o maior produtor de camarão do Brasil. Possui uma grande caatinga e praias conhecidas em todo o país. Terra dos cangaceiros. </p>",
+    conflito: "<h2>Revolução do ??? </h2> <br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> A Floresta Amazônica recobre todo o território estadual. Muito rica em seringueiras da espécie mais valiosa e Castanheiras, a floresta garante ao estado o lugar de maior produtor nacional de borracha e castanha.  </p>",
     infoConflito: "<br /> <p> O território a ser conquistado despertou interesse do Brasil após a alta do látex.  O estado sofreu resistência uma vez que o território era pertencente à Bolívia, no dia 6 de agosto de 1902 Plácido de Castro e 33 homens invadem uma Intendência boliviana e aprisionam os soldados que ocupavam o local, mas  poucas semanas depois Castro e seus homens são surpreendidos e perdem o confronto contra cerca de 200 homens da força boliviana. Castro mais uma vez agora com 1000 homens em sua jornada reconquista algumas regiões do estado e batalha após batalha no ano seguinte o estado é conquistado e proclamado como território brasileiro. </p> ",
     dica: "<br /> <p> Foi o último estado a ser incluso no Brasil. </p>",
     correctAnswer: "AC"
@@ -16,7 +16,7 @@ const perguntasNorte= [{
 
 const perguntasNordeste= [{
     conflito: "<h2>Invasão Holandesa</h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
-    infoEstado: "<br /> <p> Sua capital é conhecida como cidade do Sol </p>",
+    infoEstado: "<br /> <p> Conhecidos como comedores de camarão, o estado tem sua economia respaldada na produção de frutas,  é o maior produtor de camarão do Brasil. Possui uma grande caatinga e praias conhecidas em todo o país. Terra dos cangaceiros. </p>",
     infoConflito: "<br /> <p> A Invasão Holandesa foi um conflito que começou a se alastrar desde a Bahia movido por uma vontade antiga da Holanda de se “apossar” do Brasil a partir de uma colonização que posteriormente permitiria um enriquecimento usufruindo das riquezas da Colônia de Portugal.  Os holandeses conseguiram dominar a capital colonial em apenas dois dias. Após isso, o Rei Filipe II enviou uma frota de 12 mil homens para Salvador reconquistando a Capital. Mesmo assim os holandeses não desistiram e finalmente após alguns anos invadiram um estado quase 10 anos depois da primeira tentativa à capital . Tal conflito desencadeou o massacre de Cunhaú e Uruaçu após perseguição religiosa e uma suposta “cobrança” de dívidas de alguns engenhos da região. </p> ",
     dica: "<br /> <p> Foi renomeada como a Nova Amsterdã </p>",
     correctAnswer: "RN"
@@ -131,8 +131,8 @@ function getStyle(el,styleProp)
 
 
 function hideReg(id_reg) {
-
-
+    
+    pergunta=[];
     if (id_reg==='Norte'){
 	for(i=0;i<perguntasNorte.length;i++){
 	    pergunta.push(Object.assign({},perguntasNorte[i]));
@@ -232,8 +232,8 @@ function showReg(){
 
 function checaResp(id_state){
 
-
-
+    console.log(id_state);
+    alert(id_state);
     
     zIndEst = getStyle(id_state,"z-index");
     if(zIndEst!==150){

@@ -227,9 +227,9 @@ area{
 #RS { position: absolute; visibility: visible; left: 289px; top: 518px; z-index: 202; }
 
 
-.regiao-mapa {
+/*.regiao-mapa {
   display: none;
-}
+}*/
 
 /*.estado-mapa {
   display: none;

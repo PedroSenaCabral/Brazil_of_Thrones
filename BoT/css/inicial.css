@@ -18,8 +18,13 @@ body {
 
 .text{
     color: #000000;
+    text-shadow: 2px 3px 5px #000000;
     font-size:60px;
-    background-color:#fff;
+    background-color:#d09c44;
+    border: 1px solid #250204;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px #370e05;
+    padding: 5px;
     font-family: "Georgia";
     font-family: 'Noto Serif TC', serif;
     font-family: "IM Fell English SC", serif;
@@ -32,6 +37,7 @@ body {
 
 .text2{
     color: #800000;
+    text-shadow: 2px 3px 5px #000000;
     font-size:40px;
     font-family: 'Merienda', cursive;
     font-family: 'Niconne', cursive;
@@ -56,7 +62,8 @@ body {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #4682B4;
+    background-color: #D2691E;
+    border-color:#610800;
 }
 
 
