@@ -131,7 +131,9 @@ function getStyle(el,styleProp)
 
 
 function hideReg(id_reg) {
-    
+
+    zIndReg = getStyle(id_reg,"z-index");
+    if(!regSel && zIndReg!==250){
     pergunta=[];
     if (id_reg==='Norte'){
 	for(i=0;i<perguntasNorte.length;i++){
@@ -163,8 +165,7 @@ function hideReg(id_reg) {
     }  
     
     
-    zIndReg = getStyle(id_reg,"z-index");
-    if(!regSel && zIndReg!==250){
+
 	document.getElementById(id_reg).style.display="none";
 	regSel=true;
 
@@ -191,7 +192,7 @@ function hideReg(id_reg) {
 	    if(zIndEst!==150){ 
 		estadoReg[i].style.zIndex=zIndEst+200;
 	    }
-	    //console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
+	    console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
 	}
     } 
 
@@ -213,7 +214,7 @@ function showReg(){
 		} else {
 		    numConquistas++;
 		}
-		//console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
+		console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
 	    }
 	    regiao[i].style.display="block";
 	    if(numConquistas>=estadoReg.length/2){
@@ -232,9 +233,6 @@ function showReg(){
 
 function checaResp(id_state){
 
-    console.log(id_state);
-    alert(id_state);
-    
     zIndEst = getStyle(id_state,"z-index");
     if(zIndEst!==150){
 	tentativa++;

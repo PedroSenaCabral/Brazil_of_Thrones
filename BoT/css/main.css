@@ -169,28 +169,31 @@ area{
 
 #RO { position: absolute; visibility: visible; left: 179px; top: 286px; z-index: 203; }
 
-#TO { position: absolute; visibility: visible; left: 372px; top: 250px; z-index: 202; }
+
+
 
 /****************************** NORDESTE *************************************/
-#Nordeste{ position: absolute; visibility: visible; left: 409px; top: 202px; z-index: 301; }
+#Nordeste{ position: absolute; visibility: visible; left: 409px; top: 202px; z-index: 301;}
 
-#MA { position: absolute; visibility: visible; left: 395px; top: 202px; z-index: 200; }
+#TO { position: absolute; visibility: visible; left: 372px; top: 250px; z-index:202;}
 
-#BA { position: absolute; visibility: visible; left: 421px; top: 296px; z-index: 201; }
+#MA { position: absolute; visibility: visible; left: 395px; top: 202px; z-index: 200;}
 
-#PI { position: absolute; visibility: visible; left: 428px; top: 224px; z-index: 202; }
+#BA { position: absolute; visibility: visible; left: 421px; top: 296px; z-index: 201;}
 
-#CE { position: absolute; visibility: visible; left: 484px; top: 224px; z-index: 203; }
+#PI { position: absolute; visibility: visible; left: 428px; top: 224px; z-index: 202;}
 
-#RN { position: absolute; visibility: visible; left: 518px; top: 251px; z-index: 204; }
+#CE { position: absolute; visibility: visible; left: 484px; top: 224px; z-index: 203;}
 
-#PB { position: absolute; visibility: visible; left: 515px; top: 263px; z-index: 205; }
+#RN { position: absolute; visibility: visible; left: 518px; top: 251px; z-index: 204;}
 
-#PE { position: absolute; visibility: visible; left: 487px; top: 280px; z-index: 204; }
+#PB { position: absolute; visibility: visible; left: 515px; top: 263px; z-index: 205;}
 
-#AL { position: absolute; visibility: visible; left: 522px; top: 297px; z-index: 205; }
+#PE { position: absolute; visibility: visible; left: 487px; top: 280px; z-index: 204;}
 
-#SE { position: absolute; visibility: visible; left: 519px; top: 305px; z-index: 202; }
+#AL { position: absolute; visibility: visible; left: 522px; top: 297px; z-index: 205;}
+
+#SE { position: absolute; visibility: visible; left: 519px; top: 305px; z-index: 202;}
 
 
 /****************************** CENTRO-OESTE *********************************/
