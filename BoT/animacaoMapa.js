@@ -7,9 +7,51 @@ const perguntasNorte= [{
     infoEstado: "<br /> <p> A Floresta Amazônica recobre todo o território estadual. Muito rica em seringueiras da espécie mais valiosa e Castanheiras, a floresta garante ao estado o lugar de maior produtor nacional de borracha e castanha.  </p>",
     infoConflito: "<br /> <p> O território a ser conquistado despertou interesse do Brasil após a alta do látex.  O estado sofreu resistência uma vez que o território era pertencente à Bolívia, no dia 6 de agosto de 1902 Plácido de Castro e 33 homens invadem uma Intendência boliviana e aprisionam os soldados que ocupavam o local, mas  poucas semanas depois Castro e seus homens são surpreendidos e perdem o confronto contra cerca de 200 homens da força boliviana. Castro mais uma vez agora com 1000 homens em sua jornada reconquista algumas regiões do estado e batalha após batalha no ano seguinte o estado é conquistado e proclamado como território brasileiro. </p> ",
     dica: "<br /> <p> Foi o último estado a ser incluso no Brasil. </p>",
-    correctAnswer: "AC"
-}
-]
+    correctAnswer: "AC",
+    vitoria: ""
+}, {
+    conflito: "<h2> Guerra dos Manaus </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "AM",
+    vitoria: ""
+}, {
+    conflito: "<h2> Contestado Franco-Brasileiro </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "AP",
+    vitoria: ""
+}, {
+    conflito: "<h2> Cabanagem </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "PA",
+    vitoria: ""
+}, {
+    conflito: "<h2> Segunda revolta de Boa Vista </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "TO",
+    vitoria: ""
+}, {
+    conflito: "<h2> A Questão do Pirara </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "RR",
+    vitoria: ""
+}, {
+    conflito: "<h2> A Guerra Mojeña </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "RO",
+    vitoria: ""
+}];
 
 
 
@@ -19,33 +61,118 @@ const perguntasNordeste= [{
     infoEstado: "<br /> <p> Conhecidos como comedores de camarão, o estado tem sua economia respaldada na produção de frutas,  é o maior produtor de camarão do Brasil. Possui uma grande caatinga e praias conhecidas em todo o país. Terra dos cangaceiros. </p>",
     infoConflito: "<br /> <p> A Invasão Holandesa foi um conflito que começou a se alastrar desde a Bahia movido por uma vontade antiga da Holanda de se “apossar” do Brasil a partir de uma colonização que posteriormente permitiria um enriquecimento usufruindo das riquezas da Colônia de Portugal.  Os holandeses conseguiram dominar a capital colonial em apenas dois dias. Após isso, o Rei Filipe II enviou uma frota de 12 mil homens para Salvador reconquistando a Capital. Mesmo assim os holandeses não desistiram e finalmente após alguns anos invadiram um estado quase 10 anos depois da primeira tentativa à capital . Tal conflito desencadeou o massacre de Cunhaú e Uruaçu após perseguição religiosa e uma suposta “cobrança” de dívidas de alguns engenhos da região. </p> ",
     dica: "<br /> <p> Foi renomeada como a Nova Amsterdã </p>",
-    correctAnswer: "RN"
-}
-]
-
-
-
+    correctAnswer: "RN",
+    vitoria: ""
+}, {
+    conflito: "<h2> A Guerra de Canudos </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "BA",
+    vitoria: ""
+}, {
+    conflito: "<h2> A revolta de Juazeiro  </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "CE",
+    vitoria: ""
+}, {
+    conflito: "<h2> Balaiada </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "MA",
+    vitoria: ""
+}, {
+    conflito: "<h2> Revolta do Ronco da Abelha </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "PB",
+    vitoria: ""
+}, {
+    conflito: "<h2> Batalha do Jenipapo </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "PI",
+    vitoria: ""
+}, {
+    conflito: "<h2> Revolta de Santo Amaro </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "SE",
+    vitoria: ""
+}, {
+    conflito: "<h2> Guerra dos Palmares </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "AL",
+    vitoria: ""
+}, {
+    conflito: "<h2> Conspiração dos Suassunas </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "PE",
+    vitoria: ""
+}];
 
 const perguntasCentroOeste= [{
     conflito: "<h2>Rusga</h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> É um estado de povos diversos, uma mistura de índios, negros, espanhóis e portugueses que se miscigenaram nos primeiros anos do período colonial. É o único do Brasil a ter, sozinho, três dos principais biomas do país: Amazônia, Cerrado e Pantanal. </p>",
     infoConflito: "<br /> <p> Revolta pouco conhecida ocorrida durante o Período Regencial brasileiro, reflexo da então crescente rivalidade entre portugueses e brasileiros. O foco dos eventos foi a atual capital do estado, onde parte da elite local, desejosa de poder, se levantou contra a elite de ascendência portuguesa. Na noite de 30 de maio de 1834, a revolta eclodiu e iniciou a matança e o saque de dezenas de portugueses e pessoas ligadas a eles. Os líderes do movimento foram detidos e condenados e extinguiu-se a \"GUARDA MUNICIPAL\", que havia se envolvido diretamente no movimento. </p> ",
     dica: "<br /> <p> Estado é o maior criador de gado do país. </p>",
-    correctAnswer: "MT"
-}
-]
-
-
-
+    correctAnswer: "MT",
+    vitoria: ""
+}, {
+    conflito: "<h2> Resistência Guaicuru </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "MS",
+    vitoria: ""
+}, {
+    conflito: "<h2> Revolta dos moradores do arraial de Sant'Anna </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "GO",
+    vitoria: ""
+}];
 
 const perguntasSudeste= [{
     conflito: "<h2>Revolta da vacina</h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> Grande parte da economia do estado se baseia na prestação de serviços, tendo uma parte significativa da indústria e pouca influência no setor de agropecuária. Sua capital é conhecida internacionalmente como \"cidade maravilhosa\" devido às belezas naturais. </p>",
     infoConflito: "<br /> <p> A capital do estado sofria com graves problemas urbanos e sociais: pobreza, desemprego, falta de saneamento e coleta de lixo, surtos de doenças como varíola, febre amarela e peste bubônica. Com a intenção de modernizar a cidade e controlar tais epidemias, o presidente Rodrigues Alves iniciou uma série de reformas urbanas e sanitárias que mudaram a geografia da cidade e o cotidiano de sua população. </p> <b /> <p>Nesse contexto, o congresso aprovou uma lei que instaurou a vacinação obrigatória da população contra a varíola. A medida autoritária e invasiva, sem a preocupação de esclarecimento da população a respeito da importância da medida, provocou uma revolta geral da população entre 10 e 16 de novembro de 1904. No dia 16 de novembro, foi decretado o estado de sítio e a suspensão da vacinação obrigatória. A revolta foi duramente reprimida, com centenas de participantes presos e deportados para o Acre. </p> ",
     dica: "<br /> <p> A capital do estado já foi a capital do Império (1822–1889) e da República (1889–1960). </p>",
-    correctAnswer: "RJ"
-}
-]
+    correctAnswer: "RJ",
+    vitoria: ""
+}, {
+    conflito: "<h2> Revolução de 1924 </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "SP",
+    vitoria: ""
+},{
+    conflito: "<h2> A Inconfidência Mineira </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "MG",
+    vitoria: ""
+},{
+    conflito: "<h2> Insurreição do Queimado</h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    infoEstado: "<br /> <p> ... </p>",
+    infoConflito: "<br /> <p> ... </p> ",
+    dica: "<br /> <p> ... </p>",
+    correctAnswer: "ES",
+    vitoria: ""
+}];
 
 
 
@@ -55,20 +182,22 @@ const perguntasSul= [{
     infoEstado: "<br /><p> Possui uma cultura própria derivada do amálgama da cultura ibérica e indígena que habitavam o pampa.</p>",
     infoConflito: "<br /> <p>A Guerra dos Farrapos foi um conflito de caráter republicano, contra o governo imperial do Brasil, e que resultou na declaração de independência da província como estado republicano. Ocorreu entre 1835 e 1845, inicialmente reivindicando a retirada de todos os portugueses que se mantinham nos mais altos cargos do Império e do Exército, mesmo depois da Independência. No entanto, a revolução adquiriu um caráter separatista.</p> ",
     dica: "<br /> <p> Um traje típico da região é a bombacha, uma calça abotoadas no tornozelo. O nome foi adotado do termo espanhol \"bombacho\", que significa \"calças largas\".</p>",
-    correctAnswer: "RS"
+    correctAnswer: "RS",
+    vitoria: ""
 }, {
     conflito: "<h2>O Contestado</h2><br /> <br /><strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> É o 20º estado brasileiro por área territorial e o 11.º por população. Sua cultura é derivada de imigrantes majoritariamente europeus (portugueses, italianos e alemães).</p>",
     infoConflito: "<br /> <p> A Guerra do Contestado ocorreu no período de 1912 a 1916. Dentre as principais causas estão a disputa territorial de uma área rica em erva-mate e madeira, o autoritarismo de coronéis locais e da guarda nacional e o impacto da construção de uma estrada de ferro que ligava o Rio Grande do sul a São Paulo. No fim da construção do trecho da estrada de ferro na região, como parte do acordo de concessão, a companhia responsável (Brazil Railway Company) recebeu do governo 15 km de cada lado da ferrovia e iniciou a desapropriação de 6.696 km² de terras ocupadas já há muito tempo por posseiros que viviam na região. Também, os trabalhadores, que vinham de todas as partes do Brasil, haviam sido dispensados com o fim do serviço e não tinham como retornar a sua terra de origem.</p> <br/> <p>A revolta também tinha um caráter messiânico e chegou a ser chamada de “um novo Canudos” pela imprensa da época. O movimento teve início com com um grupo muito pequeno de sertanejos que seguiam um curandeiro, o \"santo monge\" José Maria, com o intuito de formar uma comunidade autônoma, onde todos viveriam em comunhão de bens. No entanto, com o tempo ganhou força e até ex-combatentes da Revolução Federalista se juntaram ao movimento.</p> ",
     dica: "<br /> <p> Após a rendição do último líder dos insurgentes, houve a assinatura do acordo de limites entre os estados a qual pertencia a área contestada. O estado, cujo território atual compreende a maior parte da região do conflito, passou a fazer fronteira com a Argentina e Paraguai, enquanto que o outro estado deixou de fazer fronteira com um dos estados brasileiros.</p>",
-    correctAnswer: "SC"
+    correctAnswer: "SC",
+    vitoria: ""
 }, {
     conflito: "<h2>O Cerco da Lapa</h2><br /> <br/><strong> Clique no estado em que ocorreu esse conflito. </strong> ",
     infoEstado: "<br /> <p> Cultura derivada dos imigrantes majoritariamente europeus (portugueses, italianos, alemães e poloneses).</p>",
     infoConflito: " <br /> <p>O Cerco da Lapa foi um episódio militar (Exército Brasileiro, Guarda Nacional, Polícia Militar do estado e voluntários) que ocorreu durante a Revolução Federalista em 1894, quando a cidade de Lapa tornou-se arena de um sangrento confronto entre as tropas republicanas, os chamados pica-paus (legalistas), e os maragatos (federalistas), contrários ao sistema presidencialista de governo. Os legalistas resistiram bravamente ao cerco por 26 dias, mas sucumbiram pela falta de munição e comida. A lendária batalha deu ao Marechal Floriano Peixoto, chefe da República, tempo suficiente para reunir forças e deter as tropas federalistas.</p> ",
     dica: "<br /> <p> Esse estado também é conhecido como a terra dos pinheirais.</p>",
-    correctAnswer: "PR"
-
+    correctAnswer: "PR",
+    vitoria: ""
 }];
 
 /*************************************** FIM DAS PERGUNTAS ***************************************/

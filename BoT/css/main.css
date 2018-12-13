@@ -169,13 +169,14 @@ area{
 
 #RO { position: absolute; visibility: visible; left: 179px; top: 286px; z-index: 203; }
 
+#TO { position: absolute; visibility: visible; left: 372px; top: 250px; z-index:202;}
+
+#AP { position: absolute; visibility: visible; left: 322px; top: 137px; z-index:202;}
 
 
 
 /****************************** NORDESTE *************************************/
 #Nordeste{ position: absolute; visibility: visible; left: 409px; top: 202px; z-index: 301;}
-
-#TO { position: absolute; visibility: visible; left: 372px; top: 250px; z-index:202;}
 
 #MA { position: absolute; visibility: visible; left: 395px; top: 202px; z-index: 200;}
 
