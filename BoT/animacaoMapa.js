@@ -183,21 +183,21 @@ const perguntasSul= [{
     infoConflito: "<br /> <p>A Guerra dos Farrapos foi um conflito de caráter republicano, contra o governo imperial do Brasil, e que resultou na declaração de independência da província como estado republicano. Ocorreu entre 1835 e 1845, inicialmente reivindicando a retirada de todos os portugueses que se mantinham nos mais altos cargos do Império e do Exército, mesmo depois da Independência. No entanto, a revolução adquiriu um caráter separatista.</p> ",
     dica: "<br /> <p> Um traje típico da região é a bombacha, uma calça abotoadas no tornozelo. O nome foi adotado do termo espanhol \"bombacho\", que significa \"calças largas\".</p>",
     correctAnswer: "RS",
-    vitoria: "<p>Parabéns você conquistou o Rio Grande do Sul!!</p>"
+    vitoria: "<p>Parabéns você conquistou o Rio Grande do Sul!!</p><br/><br/> <img src='img/msgVitoria/sul/Farrapos.jpg' style='width:30%;' alt='Vit_RS' /> <br/> Visite a página da <a href='https://pt.wikipedia.org/wiki/Guerra_dos_Farrapos' target='_blank'> Wikipédia </a> sobre o conflito. <br/><br/> <strong>Curiosidade:</strong> Um dos líderes da revolta era Giuseppe Garibaldi, que posteriormente iria contribuir para a unificação italiana."
 }, {
     conflito: "<h2>O Contestado</h2><br /> <br /><strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> É o 20º estado brasileiro por área territorial e o 11.º por população. Sua cultura é derivada de imigrantes majoritariamente europeus (portugueses, italianos e alemães).</p>",
     infoConflito: "<br /> <p> A Guerra do Contestado ocorreu no período de 1912 a 1916. Dentre as principais causas estão a disputa territorial de uma área rica em erva-mate e madeira, o autoritarismo de coronéis locais e da guarda nacional e o impacto da construção de uma estrada de ferro que ligava o Rio Grande do sul a São Paulo. No fim da construção do trecho da estrada de ferro na região, como parte do acordo de concessão, a companhia responsável (Brazil Railway Company) recebeu do governo 15 km de cada lado da ferrovia e iniciou a desapropriação de 6.696 km² de terras ocupadas já há muito tempo por posseiros que viviam na região. Também, os trabalhadores, que vinham de todas as partes do Brasil, haviam sido dispensados com o fim do serviço e não tinham como retornar a sua terra de origem.</p> <br/> <p>A revolta também tinha um caráter messiânico e chegou a ser chamada de “um novo Canudos” pela imprensa da época. O movimento teve início com com um grupo muito pequeno de sertanejos que seguiam um curandeiro, o \"santo monge\" José Maria, com o intuito de formar uma comunidade autônoma, onde todos viveriam em comunhão de bens. No entanto, com o tempo ganhou força e até ex-combatentes da Revolução Federalista se juntaram ao movimento.</p> ",
     dica: "<br /> <p> Após a rendição do último líder dos insurgentes, houve a assinatura do acordo de limites entre os estados a qual pertencia a área contestada. O estado, cujo território atual compreende a maior parte da região do conflito, passou a fazer fronteira com a Argentina e Paraguai, enquanto que o outro estado deixou de fazer fronteira com um dos estados brasileiros.</p>",
     correctAnswer: "SC",
-    vitoria: ""
+    vitoria: "<p>Parabéns você conquistou Santa Catarina!!</p><br/><br/> <img src='img/msgVitoria/sul/Contestado.png' style='width:30%;' alt='Vit_SC' /> <br/> Visite a página da <a href='https://pt.wikipedia.org/wiki/Guerra_do_Contestado' target='_blank'>  Wikipédia </a>  sobre o conflito ou assista um <a href='https://www.youtube.com/watch?v=clz3NhqPUf0' target='_blank'>  documentário </a>. <br/><br/> <strong>Curiosidade:</strong> Da época da guerra, temos o registro de uma rara visão lúcida do conflito, que veio justamente de um comandante do Exército, o jovem capitão Mattos Costa: <br/><br/> “A revolta do Contestado é apenas uma insurreição de sertanejos espoliados nas suas terras, nos seus direitos e na sua segurança. A questão do Contestado se desfaz com um pouco de instrução e o suficiente de justiça, como um duplo produto que ela é da violência que revolta e da ignorância que não sabe outro meio de defender o seu direito”. <br/><br/>Este tentou uma solução pacífica, conseguindo conversar com as lideranças mais moderada dos sertanejos, mas morreu em combate, em 1914."
 }, {
     conflito: "<h2>O Cerco da Lapa</h2><br /> <br/><strong> Clique no estado em que ocorreu esse conflito. </strong> ",
     infoEstado: "<br /> <p> Cultura derivada dos imigrantes majoritariamente europeus (portugueses, italianos, alemães e poloneses).</p>",
     infoConflito: " <br /> <p>O Cerco da Lapa foi um episódio militar (Exército Brasileiro, Guarda Nacional, Polícia Militar do estado e voluntários) que ocorreu durante a Revolução Federalista em 1894, quando a cidade de Lapa tornou-se arena de um sangrento confronto entre as tropas republicanas, os chamados pica-paus (legalistas), e os maragatos (federalistas), contrários ao sistema presidencialista de governo. Os legalistas resistiram bravamente ao cerco por 26 dias, mas sucumbiram pela falta de munição e comida. A lendária batalha deu ao Marechal Floriano Peixoto, chefe da República, tempo suficiente para reunir forças e deter as tropas federalistas.</p> ",
     dica: "<br /> <p> Esse estado também é conhecido como a terra dos pinheirais.</p>",
     correctAnswer: "PR",
-    vitoria: ""
+    vitoria: "<p>Parabéns você conquistou o Paraná!!</p><br/><br/> <img src='img/msgVitoria/sul/CercoLapa.png' style='width:30%;' alt='Vit_PR' /> <br/> Visite a página da <a href='https://pt.wikipedia.org/wiki/Cerco_da_Lapa' target='_blank'> Wikipédia </a> sobre o conflito. <br/><br/> <strong>Curiosidade:</strong> Ao todo foram 938 homens entre forças regulares e civis voluntários, que resistiram ao cerco, lutando contra as forças revolucionárias formadas por 3000 homens."
 }];
 
 /*************************************** FIM DAS PERGUNTAS ***************************************/
@@ -379,13 +379,10 @@ function checaResp(id_state){
 	tentativa++;
 	if(pergunta[random_01].correctAnswer===id_state){
 	    // se acertou
-	    console.log('1');
 	    alert("Correto!");
-	    console.log('2');
 	    switchState(id_state);
-	    mensagemVitoria(id_state);
 	    setTimeout(showReg,800);
-	    console.log('3');
+	    mensagemVitoria(id_state);
 	    regSel=false;
 	} else if (tentativa===1){
 	    // se errou pela primeira vez
@@ -412,10 +409,6 @@ function checaResp(id_state){
     }
 }
 
-function mensagemVitoria(id_state){
-
-
-}
 
 
 function switchState(id_state) {
@@ -432,5 +425,29 @@ function switchReg(id_reg) {
 
 //regioes.forEach(regiao => regiao.addEventListener('click', hideReg));
 
+/************ TESTE ************/
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
 
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+} 
+
+
+function mensagemVitoria(id_state){
+    document.getElementById('msgVit').innerHTML=pergunta[random_01].vitoria;
+    modal.style.display = "block";
+}
