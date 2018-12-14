@@ -9,51 +9,69 @@
 body {
   height: 100vh;
   display: flex;
-  background-image: url("../img/layout.bmp");
+  background-image: url("../img/inicial.jpg");
   background-position:center center;
   background-repeat:no-repeat;
   background-size:cover
 }
 
-
-.text{
-    color: #000000;
-    text-shadow: 2px 3px 5px #000000;
-    font-size:60px;
-    background-color:#d09c44;
-    border: 1px solid #250204;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px #370e05;
-    padding: 5px;
-    font-family: "Georgia";
-    font-family: 'Noto Serif TC', serif;
-    font-family: "IM Fell English SC", serif;
-    height: 35%;
-    width:35%;
-    position: absolute;
-    top: 30%;
-    left: 32%;
+.pergaminho{
+    position: relative;
+    width: 50%;
+    height:100vh;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
 }
 
-.text2{
-    color: #800000;
-    text-shadow: 2px 3px 5px #000000;
-    font-size:40px;
+.text{
+    position: absolute;
+    top:10%;
+    color: #000000;
+    padding:30px 30px;
+    margin-left: 60px;
+    margin-right:110px;
+    font-size:20px;
+    font-family: "Georgia";
     font-family: 'Merienda', cursive;
     font-family: 'Niconne', cursive;
-    height: 7%;
-    position: absolute;
-    top: 42%;
-    left: 40%;
+    display:block;
+}
+
+#Pag2{
+    display:none;
+}
+
+#btnPag1, #btnPag2{
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left:70%;
+  width: auto;
+  margin-top: -20px;
+  padding: 16px;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Georgia";
+  user-select: none;
+}
+
+#btnPag1{
+    display:none;
 }
 
 .jogar{
     color: #fff;
     height: 10%;
     position: absolute;
-    top: 55%;
-    left: 47%;
-
+    top: 100%;
+    left: 45%;
+    transform: translate(-50%, 0%);
 }
 
 .jogar > a{

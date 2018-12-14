@@ -159,7 +159,7 @@ const perguntasSudeste= [{
     correctAnswer: "SP",
     vitoria: ""
 },{
-    conflito: "<h2> A Inconfidência Mineira </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
+    conflito: "<h2> A Inconfidência ??? </h2><br /><br /> <strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> ... </p>",
     infoConflito: "<br /> <p> ... </p> ",
     dica: "<br /> <p> ... </p>",
@@ -183,7 +183,7 @@ const perguntasSul= [{
     infoConflito: "<br /> <p>A Guerra dos Farrapos foi um conflito de caráter republicano, contra o governo imperial do Brasil, e que resultou na declaração de independência da província como estado republicano. Ocorreu entre 1835 e 1845, inicialmente reivindicando a retirada de todos os portugueses que se mantinham nos mais altos cargos do Império e do Exército, mesmo depois da Independência. No entanto, a revolução adquiriu um caráter separatista.</p> ",
     dica: "<br /> <p> Um traje típico da região é a bombacha, uma calça abotoadas no tornozelo. O nome foi adotado do termo espanhol \"bombacho\", que significa \"calças largas\".</p>",
     correctAnswer: "RS",
-    vitoria: ""
+    vitoria: "<p>Parabéns você conquistou o Rio Grande do Sul!!</p>"
 }, {
     conflito: "<h2>O Contestado</h2><br /> <br /><strong> Clique no estado em que ocorreu esse conflito. </strong>",
     infoEstado: "<br /> <p> É o 20º estado brasileiro por área territorial e o 11.º por população. Sua cultura é derivada de imigrantes majoritariamente europeus (portugueses, italianos e alemães).</p>",
@@ -321,7 +321,7 @@ function hideReg(id_reg) {
 	    if(zIndEst!==150){ 
 		estadoReg[i].style.zIndex=zIndEst+200;
 	    }
-	    console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
+	    //console.log(estadoReg[i].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[i].id,"z-index"))
 	}
     } 
 
@@ -343,11 +343,23 @@ function showReg(){
 		} else {
 		    numConquistas++;
 		}
-		console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
+		//console.log(estadoReg[j].id,"Antes:",zIndEst,"Depois:",getStyle(estadoReg[j].id,"z-index"))
 	    }
 	    regiao[i].style.display="block";
 	    if(numConquistas>=estadoReg.length/2){
 		switchReg(regiao[i].id);
+
+		//Apareça Trofeu
+		if(regiao[i].id=='Norte')
+		    document.getElementById("brasao-tully").style.display = "block";
+		else if(regiao[i].id=='Nordeste')
+		    document.getElementById("brasao-martell").style.display = "block";
+		else if(regiao[i].id=='CentroOeste')
+		    document.getElementById("brasao-tyrell").style.display = "block";
+		else if(regiao[i].id=='Sudeste')
+		    document.getElementById("brasao-lannister").style.display = "block";
+		else if(regiao[i].id=='Sul')
+		    document.getElementById("brasao-stark").style.display = "block";
 	    } 
 	    break;
 	}
@@ -367,9 +379,13 @@ function checaResp(id_state){
 	tentativa++;
 	if(pergunta[random_01].correctAnswer===id_state){
 	    // se acertou
+	    console.log('1');
 	    alert("Correto!");
+	    console.log('2');
 	    switchState(id_state);
-	    showReg();
+	    mensagemVitoria(id_state);
+	    setTimeout(showReg,800);
+	    console.log('3');
 	    regSel=false;
 	} else if (tentativa===1){
 	    // se errou pela primeira vez
@@ -378,15 +394,14 @@ function checaResp(id_state){
             $('.nav-pills a[href="#dica"]').toggleClass('disabled');
 	    $('.nav-pills a[href="#dica"]').attr('data-toggle','pill');
 	    $('.nav-pills a[href="#dica"]').tab('show');
-
     
-	    alert("Estado incorreto! Tem mais uma tentativa.");
-	    
+
+	    alert("Estado incorreto! Tem mais uma tentativa.");	    
 
 	} else {
 	    // se acertou ou errou após a dica
 	    alert("Estado incorreto!");
-	    showReg();
+	    setTimeout(showReg,800);
 	    regSel=false;
 	}
 	
@@ -396,6 +411,12 @@ function checaResp(id_state){
 	}
     }
 }
+
+function mensagemVitoria(id_state){
+
+
+}
+
 
 function switchState(id_state) {
     document.getElementById(id_state).classList.add('switch');

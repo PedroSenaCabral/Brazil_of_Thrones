@@ -20,7 +20,7 @@ body {
     color: #000000;
     text-shadow: 2px 3px 5px #000000;
     font-size:60px;
-    background-color:#d09c44;
+    background-color:#e49b34;
     border: 1px solid #250204;
     border-radius: 5px;
     box-shadow: 4px 8px 16px #370e05;
@@ -59,11 +59,21 @@ body {
 .jogar > a{
     cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
     display:block;
+
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #D2691E;
-    border-color:#610800;
+.btn, .btn-primary, .jogar > a.btn-primary:visited {
+    background-color: #900505;
+    border-color: #610800;
+    box-shadow: 3px 4px #000000;
+
 }
 
+.jogar > a.btn-primary:hover, .jogar > a.btn-primary:active:focus, .jogar > a.btn-primary.active {
+    color:#000000;
+    background-color: #a32927;
+}
 
+.btn-primary:active, {
+      transform: translateY(4px);
+}

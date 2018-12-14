@@ -61,20 +61,24 @@ body {
 
 /* fim estilo*/
 
-.brasoes-familias{
+.brasao{
     position: absolute;
-    width: 50%;
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    border-radius: 0;
 }
 
-.brasao-stark{
-    position: absolute;
-    display: block;
-    transform: scale(0.1);
-    visibility: visible; 
-    left: 10px; 
-    top: 10px; 
-    z-index: 400;
-}
+#brasao-tully{ transform: scale(0.65); top: -1%; left: 43%}
+
+#brasao-martell{ transform: scale(1.8); top: 5%; left: 53%;}
+
+#brasao-tyrell{ transform: scale(0.57); top: -1%; left: 65.5%;}
+
+#brasao-lannister{ transform: scale(0.7); top: -1%; left: 75.5%;}
+
+#brasao-stark{ transform: scale(0.65);  top: 2%; left: 86%;}
 
 .mapa-BoT {
   width: 80%;
