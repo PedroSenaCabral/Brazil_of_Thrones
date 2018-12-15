@@ -16,28 +16,39 @@ body {
 }
 
 .pergaminho{
-    position: relative;
-    width: 50%;
-    height:100vh;
-    text-align: justify;
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    padding:0;
+    width: 55%;
+    height:100%;
+    padding-bottom:0;
+    text-align: justify;
+}
+
+.pergaminho-img{
+    position: absolute;
+    padding-bottom:0;
+    top:0%; 
+    width: 50%;
+    height:110%;
+    z-index:-1;
 }
 
 .text{
-    position: absolute;
-    top:10%;
+    padding-top:15%; 
+    padding-left:15%;
+    padding-bottom:10%;
+    padding-right:5%;
+    height:100%;
     color: #000000;
-    padding:30px 30px;
-    margin-left: 60px;
-    margin-right:110px;
-    font-size:23px;
-    line-height: 1.2;
+    font-size:24px;
+    line-height: 1;
     font-family: "Georgia";
     font-family: 'Merienda', cursive;
     font-family: 'Niconne', cursive;
+    z-index:0;
+}
+
+#Pag1{
     display:block;
 }
 
@@ -48,8 +59,8 @@ body {
 #btnPag1, #btnPag2{
   cursor: pointer;
   position: absolute;
-  top: 90%;
-  left:70%;
+  top: 87%;
+  left:65%;
   width: auto;
   margin-top: -20px;
   padding: 16px;
@@ -66,23 +77,16 @@ body {
     display:none;
 }
 
-.jogar{
-    color: #fff;
-    height: 10%;
-    position: absolute;
-    top: 100%;
-    left: 45%;
-    transform: translate(-50%, 0%);
-}
-
-.jogar > a{
-    cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
-    display:block;
-}
-
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
     background-color: #D2691E;
     border-color:#610800;
+    cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
+
 }
 
 

@@ -15,24 +15,28 @@ body {
   background-size:cover
 }
 
+.center{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    overflow: auto;
+    background-color:#e49b34;
+    border: 1px solid #250204;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px #370e05;
+    padding: 20px;
+
+}
 
 .text{
     color: #000000;
     text-shadow: 2px 3px 5px #000000;
     font-size:60px;
-    background-color:#e49b34;
-    border: 1px solid #250204;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px #370e05;
-    padding: 5px;
     font-family: "Georgia";
     font-family: 'Noto Serif TC', serif;
     font-family: "IM Fell English SC", serif;
-    height: 35%;
-    width:35%;
-    position: absolute;
-    top: 30%;
-    left: 32%;
 }
 
 .text2{
@@ -41,37 +45,19 @@ body {
     font-size:40px;
     font-family: 'Merienda', cursive;
     font-family: 'Niconne', cursive;
-    height: 7%;
-    position: absolute;
-    top: 42%;
-    left: 40%;
 }
 
-.jogar{
+.btn, .btn-primary, a.btn-primary:visited {
     color: #fff;
-    height: 10%;
-    position: absolute;
-    top: 55%;
-    left: 47%;
-
-}
-
-.jogar > a{
-    cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
-    display:block;
-
-}
-
-.btn, .btn-primary, .jogar > a.btn-primary:visited {
     background-color: #900505;
     border-color: #610800;
     box-shadow: 3px 4px #000000;
-
 }
 
-.jogar > a.btn-primary:hover, .jogar > a.btn-primary:active:focus, .jogar > a.btn-primary.active {
+a.btn-primary:hover, a.btn-primary:active:focus, a.btn-primary.active {
     color:#000000;
     background-color: #a32927;
+    cursor: url('../img/swordGoT2.bmp') 2 2, url('../img/swordGoT2.png') 2 2, pointer;
 }
 
 .btn-primary:active, {
